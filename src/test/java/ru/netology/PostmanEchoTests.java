@@ -19,7 +19,7 @@ public class PostmanEchoTests {
         // Проверки
                 .then().log().all()
                 .statusCode(200)
-                .body("data", org.hamcrest.Matchers.equalTo("echol"))
+                .body("data", org.hamcrest.Matchers.equalTo("echo"))
                 .headers("content-type", "application/json; charset=utf-8")
         ;
     }
